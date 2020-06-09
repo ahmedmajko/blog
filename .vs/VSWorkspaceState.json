@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\share",
+    "\\src\\app\\share\\component",
+    "\\src\\app\\share\\component\\layout",
+    "\\src\\app\\share\\component\\layout\\admin-layout",
+    "\\src\\app\\share\\component\\layout\\user-layout"
+  ],
+  "SelectedNode": "\\src\\app\\share\\component\\layout\\user-layout\\user-layout.component.html",
+  "PreviewInSolutionExplorer": false
+}

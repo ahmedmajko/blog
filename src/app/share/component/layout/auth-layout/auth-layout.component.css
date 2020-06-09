@@ -1,0 +1,14 @@
+.text-muted {
+    color: #6c757d!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
