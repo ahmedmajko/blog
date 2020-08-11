@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class StudentService {
-  url: string = "https://localhost:44314/api/Employees1";
-  urlDep: string ="https://localhost:44314/api/Departments"
+  url: string = "https://localhost:5001/api/Employees1";
+  urlDep: string ="https://localhost:5001/api/Departments"
   students: Student[];
   employee: Student = new Student();
 

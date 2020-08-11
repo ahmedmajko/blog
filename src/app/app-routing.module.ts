@@ -6,7 +6,7 @@ import { EmployeeItemComponent } from './employee-item/employee-item.component';
 import { AdminLayoutComponent } from './share/component/layout/admin-layout/admin-layout.component';
 import { UserLayoutComponent } from './share/component/layout/user-layout/user-layout.component';
 import { BlankLayoutComponent } from './share/component/layout/blank-layout/blank-layout.component';
-
+import {AuthLayoutComponent } from './share/component/layout/auth-layout/auth-layout.component'
 
 const routes: Routes = [
   {
@@ -16,8 +16,11 @@ const routes: Routes = [
         loadChildren: () => import('./views/pages/pages.module').then(e => e.PagesModule)
       }
     ] },
-  { path: 'view-employee', component: StudentListComponent },
-  { path: 'add-employee', component: EmployeeItemComponent },
+
+  { path: 'view-employee',
+   component: StudentListComponent },
+  { path: 'add-employee',
+   component: EmployeeItemComponent },
   {
     path: 'admin', component: AdminLayoutComponent,
     children: [
@@ -26,6 +29,14 @@ const routes: Routes = [
         loadChildren: () => import('./views/posts/posts.module').then(e => e.PostsModule)
       }
     ]},
+    {
+      path: 'auth', component: AuthLayoutComponent,
+      children: [
+        {
+          path: '',
+          loadChildren: () => import('./views/auth/auth.module').then(e => e.AuthModule)
+        }
+      ]},
   {
     path: 'user', component: UserLayoutComponent,
     children: [

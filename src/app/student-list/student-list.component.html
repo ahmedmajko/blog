@@ -19,7 +19,8 @@
           <td>{{item.gender}}</td>
           <td><span *ngIf="item.manager">{{item.manager.firstName}}</span></td>
           <td><span *ngIf="item.department">{{item.department.name}}</span></td>
-          <td><div class=" btn btn-warning" (click)="EditData(item)">Edit</div><div class="btn btn-danger" (click)="delete(item.id)"> Delete</div></td>
+          <td><div class=" btn btn-warning" (click)="EditData(item)">Edit</div>
+            <div class="btn btn-danger" (click)="delete(item.id)"> Delete</div></td>
         </tr>
       </tbody>
     </table>
